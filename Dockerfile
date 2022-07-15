@@ -3,7 +3,7 @@
  # Using the base image openjdk: latest
  FROM openjdk:latest
  # Copying myfile1.txt to the containers /usr/share directory
- RUN cd /usr/share/alpha
+ RUN cd /usr/share
  RUN mkdir alpha
  COPY ./fld_c/*.c /usr/share/alpha
  #  
