@@ -4,6 +4,6 @@
  FROM openjdk:latest
  # Copying myfile1.txt to the containers /usr/share directory
  RUN cd /usr/share
- RUN mkdir alpha
+ RUN mkdir /usr/share/alpha
  COPY ./fld_c/*.c /usr/share/alpha
  #  
