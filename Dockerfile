@@ -8,10 +8,12 @@
  RUN apt-get -y install gcc
  # Change directory to /usr/share directory
  RUN cd /usr/share
+ # Make directory alpha
  RUN mkdir /usr/share/alpha
  COPY ./fld_c/*.c /usr/share/alpha
  #Set working directory where application will compile
  WORKDIR /usr/share/alpha
  # Compile .c application
  RUN gcc -o myapp hello.c
+ CMD ["./myapp"]
  #
