@@ -15,5 +15,4 @@
  WORKDIR /usr/share/alpha
  # Compile .c application
  RUN gcc -o myapp hello.c
- CMD ["./myapp"]
  #
